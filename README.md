@@ -1,11 +1,11 @@
 # Monolith
 
-##Overview
+## Overview
 
 Monolith is a game heavily based on Action Button Entertainment's Ziggurat. 
 Player at the top of the Monolith shoots down enemies before they reach him.
 
-##MVP
+## MVP
 
   * Game will have different diffuculty level
   * Sound effects when player kills enemy
@@ -15,6 +15,6 @@ Player at the top of the Monolith shoots down enemies before they reach him.
   * Player can pause game
   * Score and number of kills displayed on game screen
 
-##Wireframe
+## Wireframe
 
   ![](assets/images/wireframe.png)
