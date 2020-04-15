@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass Game {\n  constructor(canvas, ctx){\n    this.canvas = canvas;\n    this.ctx = ctx;\n    // this.drawPyramid(ctx);\n  }\n\n  // drawPyramid(ctx) {\n    // ctx.beginPath();\n    // ctx.moveTo(75, 50);\n    // ctx.lineTo(100, 75);\n    // ctx.lineTo(100, 25);\n    // ctx.fill();\n    // ctx.lineWidth = 26;\n    // ctx.strokeStyle = 'white';\n    // ctx.beginPath();\n    // ctx.moveTo(0, 450);\n    // ctx.lineTo(80,450);\n    // ctx.lineTo(152,370);\n    // ctx.stroke();\n    // ctx.closePath();\n  // }\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Game);\n\n//# sourceURL=webpack:///./src/game.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nclass Game {\n  constructor(canvas, ctx){\n    this.canvas = canvas;\n    this.ctx = ctx;\n  }\n\n  \n  \n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Game);\n\n//# sourceURL=webpack:///./src/game.js?");
 
 /***/ }),
 
