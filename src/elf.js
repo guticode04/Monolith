@@ -30,16 +30,18 @@ class Elf {
     // const imgBufferBottom = 225;
     // const imgBufferBetween = 1550;
     // const singleImgWidth = 450;
-    // const singleImgHeight = 600;
+    // const singleImgHeight = 635;
     // const frameCount = 10;
+    // single frameDim = 2000 * 1050;
     // const width = sheetWidth / frameCount;
-  
     this.game.ctx.drawImage(this.elf,
       //source position
       730, 225, 450, 635,
       //destination position
       ELF_POS_X, ELF_POS_Y, ELF_WIDTH, ELF_HEIGHT);
   }
+
+  
 
 }
 

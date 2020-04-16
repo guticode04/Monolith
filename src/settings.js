@@ -13,8 +13,24 @@ export const ELF_POS_Y = 125;
 export const GAME_WIDTH = 1000;
 export const GAME_HEIGHT = 600;
 export const gameControls = () => {
+  document.addEventListener('keydown', (event) => {
+    switch(event.keyCode) {
+      case 37:
+        break;
+      case 38:
+        break;
+      case 39:
+        break;
+      case 40:
+        break;
+      default:
+        break;
+    }
+  })
 
 }
+
+
 
 //monolith settings
 
