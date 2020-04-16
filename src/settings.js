@@ -3,15 +3,18 @@
 
 //elf settings
 
-export const ELF_WIDTH = 60;
-export const ELF_HEIGHT = 90;
-export const ELF_POS_X = 380;
-export const ELF_POS_Y = 540;
+export const ELF_WIDTH = 80;
+export const ELF_HEIGHT = 110;
+export const ELF_POS_X = 425;
+export const ELF_POS_Y = 125; 
 
 //game settings
 
 export const GAME_WIDTH = 1000;
 export const GAME_HEIGHT = 600;
+export const gameControls = () => {
+
+}
 
 //monolith settings
 
