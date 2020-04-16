@@ -1,5 +1,10 @@
 import Elf from './elf';
-import { GAME_WIDTH, GAME_HEIGHT } from './settings';
+import { 
+  MON_WIDTH, 
+  MON_HEIGHT,
+  MON_POS_X,
+  MON_POS_Y
+} from './settings';
 class Game {
   constructor(canvas, ctx){
     this.canvas = canvas;
@@ -13,7 +18,7 @@ class Game {
   }
   
   drawMonolith() {
-    this.ctx.drawImage(this.monolith, 380, 190, 200, 350);
+    this.ctx.drawImage(this.monolith, MON_POS_X, MON_POS_Y, MON_WIDTH, MON_HEIGHT);
   }
   
 }

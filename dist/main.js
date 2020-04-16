@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elf */ \"./src/elf.js\");\n\n\nclass Elf {\n  \n}\n\n//# sourceURL=webpack:///./src/elf.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _settings__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./settings */ \"./src/settings.js\");\n\n\nclass Elf {\n  constructor(){\n    this.width = _settings__WEBPACK_IMPORTED_MODULE_0__[\"ELF_WIDTH\"];\n    this.height = _settings__WEBPACK_IMPORTED_MODULE_0__[\"ELF_HEIGHT\"];\n  }\n\n\n}\n\n//# sourceURL=webpack:///./src/elf.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elf
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elf */ \"./src/elf.js\");\n/* harmony import */ var _settings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./settings */ \"./src/settings.js\");\n\n\nclass Game {\n  constructor(canvas, ctx){\n    this.canvas = canvas;\n    this.ctx = ctx;\n    // this.elf = new Elf(this);\n    this.monolith = new Image();\n    this.monolith.onload = () => {\n      this.drawMonolith();\n    }\n    this.monolith.src = './dist/assets/images/monolith/monolith.png';\n  }\n  \n  drawMonolith() {\n    this.ctx.drawImage(this.monolith, 380, 190, 200, 350);\n  }\n  \n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Game);\n\n//# sourceURL=webpack:///./src/game.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elf */ \"./src/elf.js\");\n/* harmony import */ var _settings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./settings */ \"./src/settings.js\");\n\n\nclass Game {\n  constructor(canvas, ctx){\n    this.canvas = canvas;\n    this.ctx = ctx;\n    // this.elf = new Elf(this);\n    this.monolith = new Image();\n    this.monolith.onload = () => {\n      this.drawMonolith();\n    }\n    this.monolith.src = './dist/assets/images/monolith/monolith.png';\n  }\n  \n  drawMonolith() {\n    this.ctx.drawImage(this.monolith, _settings__WEBPACK_IMPORTED_MODULE_1__[\"MON_POS_X\"], _settings__WEBPACK_IMPORTED_MODULE_1__[\"MON_POS_Y\"], _settings__WEBPACK_IMPORTED_MODULE_1__[\"MON_WIDTH\"], _settings__WEBPACK_IMPORTED_MODULE_1__[\"MON_HEIGHT\"]);\n  }\n  \n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Game);\n\n//# sourceURL=webpack:///./src/game.js?");
 
 /***/ }),
 
@@ -126,11 +126,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gam
 /*!*************************!*\
   !*** ./src/settings.js ***!
   \*************************/
-/*! exports provided: GAME_WIDTH, GAME_HEIGHT, ELF_WIDTH, ELF_HEIGHT */
+/*! exports provided: ELF_WIDTH, ELF_HEIGHT, ELF_POS_X, ELF_POS_Y, GAME_WIDTH, GAME_HEIGHT, MON_POS_X, MON_POS_Y, MON_WIDTH, MON_HEIGHT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GAME_WIDTH\", function() { return GAME_WIDTH; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GAME_HEIGHT\", function() { return GAME_HEIGHT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ELF_WIDTH\", function() { return ELF_WIDTH; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ELF_HEIGHT\", function() { return ELF_HEIGHT; });\nconst GAME_WIDTH = 1000;\nconst GAME_HEIGHT = 600;\n\n//elf settings\n\nconst ELF_WIDTH = 60;\nconst ELF_HEIGHT = 90;\n\n//# sourceURL=webpack:///./src/settings.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ELF_WIDTH\", function() { return ELF_WIDTH; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ELF_HEIGHT\", function() { return ELF_HEIGHT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ELF_POS_X\", function() { return ELF_POS_X; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"ELF_POS_Y\", function() { return ELF_POS_Y; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GAME_WIDTH\", function() { return GAME_WIDTH; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GAME_HEIGHT\", function() { return GAME_HEIGHT; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"MON_POS_X\", function() { return MON_POS_X; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"MON_POS_Y\", function() { return MON_POS_Y; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"MON_WIDTH\", function() { return MON_WIDTH; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"MON_HEIGHT\", function() { return MON_HEIGHT; });\n//blast settings\n\n\n//elf settings\n\nconst ELF_WIDTH = 60;\nconst ELF_HEIGHT = 90;\nconst ELF_POS_X = 380;\nconst ELF_POS_Y = 540;\n\n//game settings\n\nconst GAME_WIDTH = 1000;\nconst GAME_HEIGHT = 600;\n\n//monolith settings\n\nconst MON_POS_X = 380;\nconst MON_POS_Y = 190;\nconst MON_WIDTH = 200;\nconst MON_HEIGHT = 350;\n\n//troll settings\n\n\n\n//# sourceURL=webpack:///./src/settings.js?");
 
 /***/ })
 
