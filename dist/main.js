@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elf
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elf */ \"./src/elf.js\");\n\nclass Game {\n  constructor(canvas, ctx){\n    this.canvas = canvas;\n    this.ctx = ctx;\n    // this.elf = new Elf(this);\n    this.monolith = new Image();\n    this.monolith.src = './dist/assets/images/monolith/monolith.png';\n  }\n\n  drawMonolith() {\n    this.ctx.drawImage(this.monolith, 0, 0, 100, 250);\n  }\n  \n  \n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Game);\n\n//# sourceURL=webpack:///./src/game.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _elf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elf */ \"./src/elf.js\");\n/* harmony import */ var _settings__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./settings */ \"./src/settings.js\");\n\n\nclass Game {\n  constructor(canvas, ctx){\n    this.canvas = canvas;\n    this.ctx = ctx;\n    // this.elf = new Elf(this);\n    this.monolith = new Image();\n    this.monolith.onload = () => {\n      this.drawMonolith();\n    }\n    this.monolith.src = './dist/assets/images/monolith/monolith.png';\n  }\n  \n  drawMonolith() {\n    this.ctx.drawImage(this.monolith, 380, 190, 200, 350);\n  }\n  \n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Game);\n\n//# sourceURL=webpack:///./src/game.js?");
 
 /***/ }),
 
