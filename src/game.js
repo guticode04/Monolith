@@ -31,9 +31,72 @@ class Game {
   draw() {
     this.elf.drawElf();
     this.blast.drawBlast();
-    this.troll.drawTroll();
+    this.troll.animateTroll();
+  }
+
+  addTrolls() {
+
+  }
+
+  processEnergyBlast() {
+
   }
   
+  createEnergyBlast() {
+
+  }
+
+  chargeEnergyBlast() {
+
+  }
+
+  
+  checkEnergyBlastCollision() {
+    
+  }
+  
+  checkElfCollision() {
+    
+  }
+
+  stopChargingEnergyBlast() {
+
+  }
+
+  startGame() {
+
+  }
+
+  setupGameControls() {
+
+  }
+
+  toggleSound() {
+
+  }
+
+  toggleDifficulty() {
+
+  }
+
+  setDifficulty() {
+    //set troll realease interval
+    //set troll health
+    //set troll speed
+    //set energy blast power
+  }
+
+  updateScore() {
+
+  }
+
+  updateNumKills() {
+
+  }
+
+
+
+
 }
 
 export default Game;

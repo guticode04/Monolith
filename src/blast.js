@@ -17,5 +17,24 @@ class Blast {
       473, 140, 67, 67
       )
   }
+
+  launchEnergyBlast() {
+
+  }
+
+  
+  updateEnergyBlast() {
+    
+  }
+  
+  //animate/traversal
+  
+  
+  //blast settings
+  
+  energyBlastPower() {
+
+  }
+  
 }
 export default Blast;

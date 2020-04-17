@@ -1,12 +1,7 @@
-import { 
-  GAME_WIDTH,
-  GAME_HEIGHT,
-  ELF_WIDTH, 
-  ELF_HEIGHT,
-  ELF_POS_X,
-  ELF_POS_Y 
-} from "./settings";
-
+const ELF_WIDTH = 300;//80
+const ELF_HEIGHT = 200;//110
+const ELF_POS_X = 425;
+const ELF_POS_Y = 125; 
 class Elf {
   constructor(game){
     this.width = ELF_WIDTH;
@@ -36,7 +31,7 @@ class Elf {
     // const width = sheetWidth / frameCount;
     this.game.ctx.drawImage(this.elf,
       //source position
-      730, 225, 450, 635,
+      730, 225, this.elf.width/6, this.elf.height,//450,635,
       //destination position
       ELF_POS_X, ELF_POS_Y, ELF_WIDTH, ELF_HEIGHT);
   }
