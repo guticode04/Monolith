@@ -1,3 +1,22 @@
+/* #background-layer {
+  background-image: url('./forest.png');
+  z-index: 1;
+}
+
+canvas {
+  position: absolute;
+} */
+
+.canvas-background {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  background-image: url('./forest.png');
+  background-size: 100% 600px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -21,11 +40,16 @@
   border-radius: 4px;
 }
 
+/* #game-layer {
+  z-index: 2;
+} */
+
 #monolithcanvas{
-  background-image: url('./forest.png');
+  position: absolute;
   border-radius: 4px;
   border: 2px solid black;
-  background-size: 100% 600px;
+  z-index: 1;
+  margin-top: 130px;
 }
 
 .music-settings {
@@ -43,3 +67,13 @@
 .sound-settings {
   padding: 5px;
 }
+
+/* #stage {
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+#ui-layer {
+  z-index: 3;
+} */
