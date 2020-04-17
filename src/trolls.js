@@ -6,30 +6,33 @@ class Troll {
     this.game = game;
     this.game.ctx = game.ctx;
     this.troll = new Image();
+    this.nextFrame = [0,1,2,3,4,5];
+    this.step = 0;
     this.troll.onload = () => {
-      this.drawTroll();
+      // this.drawTroll();
+      this.animateTroll(this.nextFrame[this.step]);
     }
     this.troll.src = './dist/assets/images/trolls/troll_01_jump.png';
   }
 
-  // requestAnimationFrame(animateTroll);
+  
+  animateTroll(step) {
+    console.log("inside animate troll");
 
-  animateTroll() {
     this.game.ctx.clearRect(0,0,this.game.canvas.width, this.game.canvas.height);
-    const nextFrame = [0,1,2,3,4,5];
-    let step = 0;
-    this.drawTroll(nextFrame[step]);
-    step++;
-    if(step >= nextFrame.length){
-      step = 0;
-    }
-    window.requestAnimationFrame(this.animateTroll.bind(this));
+    this.drawTroll(step);
+    step += 1;
+    if(step >= this.nextFrame.length){
+        step = 0;
+      }
+    // window.requestAnimationFrame(this.animateTroll.bind(this));
   }
-
+    
   drawTroll(frameStep) {
     //sheetW = 9600;
     //sheetH = 1000;
     //each frame is 1600 * 1000
+    console.log("inside draw troll");
     const frameW = this.troll.width / 6;
     const frameH = this.troll.height;
 
