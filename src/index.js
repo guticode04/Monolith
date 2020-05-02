@@ -7,4 +7,5 @@ document.addEventListener("DOMContentLoaded", ()  => {
   canvas.height = GAME_HEIGHT;
   const ctx = canvas.getContext("2d");
   new Game(ctx);
+  console.log("This is the index file");
 });

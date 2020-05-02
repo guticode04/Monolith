@@ -27,6 +27,7 @@ class Game {
   }
 
   startGame() {
+    console.log("This is the game file");
     this.running = true;
     this.animate();
   };
@@ -35,24 +36,6 @@ class Game {
   animate() {
     this.elf.drawElf();
   };
-
-
-
-  
-  
-
-
-  // draw everything on canvas
-  // draw() {
-  //   console.log("inside game draw");
-  //   this.drawMonolith();
-  //   this.elf.drawElf();
-  //   this.blast.drawBlast();
-  //   this.troll.drawTroll();
-  //   // this.troll.animateTroll();
-  //   // window.requestAnimationFrame(this.draw.bind(this));
-  // }
-
 
 
   addTrolls() {
