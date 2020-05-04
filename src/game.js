@@ -19,6 +19,7 @@ class Game {
   };
 
   loadResources(){
+    console.log("Inside load resources")
     this.monolith = new Image();
     this.monolith.src = './dist/assets/images/monolith/monolith.png';
     this.monolith.onload = () => {
@@ -27,7 +28,7 @@ class Game {
   }
 
   startGame() {
-    console.log("This is the game file");
+    console.log("Inside start game");
     this.running = true;
     this.animate();
   };
@@ -35,6 +36,7 @@ class Game {
 
   animate() {
     this.elf.drawElf();
+    window.requestAnimationFrame(animate());
   };
 
 
