@@ -17,6 +17,24 @@
 .creator-info {
   margin-top: 10px;
   border-top: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creator-info > ul {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+.creator-info ul li {
+  padding: 5px;
+  font-size: 2em;
+}
+
+i {
+  color: black;
 }
 
 .difficulty-settings {
