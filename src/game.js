@@ -1,14 +1,13 @@
 import Elf from './elf';
 import Blast from './blast';
 import Troll from './trolls';
-import { 
-  MON_WIDTH, 
-  MON_HEIGHT,
-  MON_POS_X,
-  MON_POS_Y
-} from './settings';
+// import { 
+//   MON_WIDTH, 
+//   MON_HEIGHT,
+//   MON_POS_X,
+//   MON_POS_Y
+// } from './settings';
 class Game {
-  
   constructor(ctx) {
     this.ctx = ctx;
     // this.blast = new Blast(ctx);
@@ -17,14 +16,14 @@ class Game {
     // this.loadResources();
     this.startGame();
   };
-
-  loadResources(){
-    this.monolith = new Image();
-    this.monolith.onload = () => {
-      this.ctx.drawImage(this.monolith, MON_POS_X, MON_POS_Y, MON_WIDTH, MON_HEIGHT);
-    }
-    this.monolith.src = './dist/assets/images/monolith/monolith.png';
-  }
+  
+  // loadResources(){
+  //   this.monolith = new Image();
+  //   this.monolith.onload = () => {
+  //     this.ctx.drawImage(this.monolith, MON_POS_X, MON_POS_Y, MON_WIDTH, MON_HEIGHT);
+  //   }
+  //   this.monolith.src = './dist/assets/images/monolith/monolith.png';
+  // }
 
   startGame() {
     this.running = true;
