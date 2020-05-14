@@ -11,12 +11,11 @@ class Elf {
   }
   
   drawElf() {
-    console.log("inside draw elf");
-      this.ctx.drawImage(this.elf,
-      //source position
-      0, 0, this.elf.width/6, this.elf.height,
-      //destination position
-      ELF_POS_X, ELF_POS_Y, ELF_WIDTH, ELF_HEIGHT);
+    this.ctx.drawImage(this.elf,
+    //source position
+    0, 0, this.elf.width/6, this.elf.height,
+    //destination position
+    ELF_POS_X, ELF_POS_Y, ELF_WIDTH, ELF_HEIGHT);
   } 
 
   

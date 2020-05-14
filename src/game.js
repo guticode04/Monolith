@@ -14,7 +14,7 @@ class Game {
     // this.blast = new Blast(ctx);
     this.elf = new Elf(ctx);
     // this.troll = new Troll(ctx);
-    this.loadResources();
+    // this.loadResources();
     this.startGame();
   };
 
