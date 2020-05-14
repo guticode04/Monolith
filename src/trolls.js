@@ -19,8 +19,6 @@ class Troll {
   //     }
   //   // window.requestAnimationFrame(this.animateTroll.bind(this));
   // }
-    
-  // drawTroll(frameStep) {
   drawTroll() {
     console.log("inside draw troll");
     //sheetW = 9600;

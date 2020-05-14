@@ -6,8 +6,8 @@ class Elf {
   constructor(ctx){
     this.ctx = ctx;
     this.elf =  new Image();
-    this.elf.src = "./dist/assets/images/elf/elf_03_idle.png";
     this.elf.onload = () => { this.drawElf() };
+    this.elf.src = "./dist/assets/images/elf/elf_03_idle.png";
   }
   
   drawElf() {

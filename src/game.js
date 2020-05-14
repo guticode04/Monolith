@@ -19,16 +19,14 @@ class Game {
   };
 
   loadResources(){
-    console.log("Inside load resources")
     this.monolith = new Image();
-    this.monolith.src = './dist/assets/images/monolith/monolith.png';
     this.monolith.onload = () => {
       this.ctx.drawImage(this.monolith, MON_POS_X, MON_POS_Y, MON_WIDTH, MON_HEIGHT);
     }
+    this.monolith.src = './dist/assets/images/monolith/monolith.png';
   }
 
   startGame() {
-    console.log("Inside start game");
     this.running = true;
     this.animate();
   };
@@ -36,7 +34,7 @@ class Game {
 
   animate() {
     this.elf.drawElf();
-    window.requestAnimationFrame(animate());
+    // window.requestAnimationFrame(animate());
   };
 
 
