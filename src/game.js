@@ -13,17 +13,17 @@ class Game {
     // this.blast = new Blast(ctx);
     this.elf = new Elf(ctx);
     // this.troll = new Troll(ctx);
-    // this.loadResources();
+    this.loadResources();
     this.startGame();
   };
   
-  // loadResources(){
-  //   this.monolith = new Image();
-  //   this.monolith.onload = () => {
-  //     this.ctx.drawImage(this.monolith, MON_POS_X, MON_POS_Y, MON_WIDTH, MON_HEIGHT);
-  //   }
-  //   this.monolith.src = './dist/assets/images/monolith/monolith.png';
-  // }
+  loadResources(){
+    this.monolith = new Image();
+    this.monolith.onload = () => {
+      this.ctx.drawImage(this.monolith, MON_POS_X, MON_POS_Y, MON_WIDTH, MON_HEIGHT);
+    }
+    this.monolith.src = './dist/assets/images/monolith/monolith.png';
+  }
 
   
   startGame() {
