@@ -25,6 +25,7 @@ class Game {
   //   this.monolith.src = './dist/assets/images/monolith/monolith.png';
   // }
 
+  
   startGame() {
     this.running = true;
     this.animate();

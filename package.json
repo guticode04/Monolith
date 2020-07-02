@@ -1,0 +1,23 @@
+{
+  "name": "monolith",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guticode04/Monolith.git"
+  },
+  "author": "Gustavo Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guticode04/Monolith/issues"
+  },
+  "homepage": "https://github.com/guticode04/Monolith#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
