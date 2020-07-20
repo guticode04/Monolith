@@ -34,7 +34,7 @@ class Game {
 
   animate() {
     this.elf.drawElf();
-    // window.requestAnimationFrame(animate());
+    window.requestAnimationFrame(animate());
   };
 
 
