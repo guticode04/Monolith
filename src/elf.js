@@ -1,7 +1,7 @@
 const ELF_WIDTH = 300;//80
 const ELF_HEIGHT = 200;//110
-const ELF_POS_X = 100;//425;
-const ELF_POS_Y = 100;//125; 
+const ELF_POS_X = 425;//425;
+const ELF_POS_Y = 125;//125; 
 class Elf {
   constructor(ctx){
     this.ctx = ctx;

@@ -1,12 +1,12 @@
 import Elf from './elf';
 import Blast from './blast';
 import Troll from './trolls';
-// import { 
-//   MON_WIDTH, 
-//   MON_HEIGHT,
-//   MON_POS_X,
-//   MON_POS_Y
-// } from './settings';
+import { 
+  MON_WIDTH, 
+  MON_HEIGHT,
+  MON_POS_X,
+  MON_POS_Y
+} from './settings';
 class Game {
   constructor(ctx) {
     this.ctx = ctx;
