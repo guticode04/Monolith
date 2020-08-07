@@ -1,17 +1,17 @@
-// import { 
-//   MON_WIDTH, 
-//   MON_HEIGHT,
-//   MON_POS_X,
-//   MON_POS_Y
-// } from './settings';
+import { 
+  MON_WIDTH, 
+  MON_HEIGHT,
+  MON_POS_X,
+  MON_POS_Y
+} from './settings';
 import Elf from './elf';
 import Blast from './blast';
 import Troll from './trolls';
 
-const MON_POS_X = 380;
-const MON_POS_Y = 190;
-const MON_WIDTH = 200;
-const MON_HEIGHT = 350;
+// const MON_POS_X = 380;
+// const MON_POS_Y = 190;
+// const MON_WIDTH = 200;
+// const MON_HEIGHT = 350;
 class Game {
   constructor(ctx) {
     this.ctx = ctx;

@@ -4,7 +4,7 @@ const TROLL_HEIGHT = 200;
 class Troll {
   constructor(ctx) {
     this.ctx = ctx;
-    this.drawTroll(); this will draw it as soon as there is an instance of it
+    this.drawTroll(); //this will draw it as soon as there is an instance of it
   }
 
   
