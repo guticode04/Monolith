@@ -42,7 +42,7 @@ class Game {
 
 
   animate() {
-    // this.elf.drawElf();
+    this.elf.animate();
     this.drawMonolith();
     window.requestAnimationFrame(animate());
   };
