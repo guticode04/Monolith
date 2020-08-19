@@ -18,16 +18,20 @@ class Elf {
   
   //this is one frame of the image
 
-  drawElfFrame() {
+  drawElfFrame(frameNum) {
     this.ctx.drawImage(this.elf,
     //source position
-    0, 0, this.elf.width/6, this.elf.height,
+    // 0, 0, this.elf.width/6, this.elf.height,
+    frameNum, 0, this.elf.width/6, this.elf.height,
     //destination position
     ELF_POS_X, ELF_POS_Y, ELF_WIDTH, ELF_HEIGHT);
   } 
   step() {
     let nextFrame = 0;
-    
+    //each frame is goes up by 2000
+    //so first frame is 0 second frame is 2000
+    //entire sprite page is 12000 pixels
+    let frameCycle = [0, 2000, 4000, 6000, 8000, 10000, 12000];
     return nextFrame;
   }
 
@@ -35,7 +39,7 @@ class Elf {
     this.ctx.clearRec(0,0,GAME_WIDTH,GAME_HEIGHT);
 
     //We need to flip through the sprite image
-    this.elf
+    // this.elf
   }
   
 
