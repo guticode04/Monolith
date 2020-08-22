@@ -39,12 +39,6 @@ class Elf {
     // window.requestAnimationFrame(animate());
   }
 
-  // animate() {
-  //   this.ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
-
-  //   // We need to flip through the sprite image
-  //   // this.elf
-  // }
   
 
 };
