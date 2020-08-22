@@ -15,8 +15,6 @@ class Elf {
     this.elf.src = "./dist/assets/images/elf/elf_03_idle.png";
     this.animate();
   }
-  
-  //this is one frame of the image
 
   drawElfFrame(frameIdx) {
     this.ctx.drawImage(this.elf,
@@ -29,14 +27,10 @@ class Elf {
   animate() {
     this.ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
     let currentFrameIdx = 0;
-    //each frame is goes up by 2000
-    //so first frame is 0 second frame is 2000
-    //entire sprite page is 12000 pixels
     let frameCycle = [0, 2000, 4000, 6000, 8000, 10000, 12000];
     this.drawElfFrame(frameCycle[currentFrameIdx]);
     currentFrameIdx++;
     if(currentFrameIdx > frameCycle.length) currentFrameIdx = 0;
-    // window.requestAnimationFrame(animate());
   }
 
   
