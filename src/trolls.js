@@ -4,6 +4,11 @@ const TROLL_HEIGHT = 200;
 class Troll {
   constructor(ctx) {
     this.ctx = ctx;
+    this.troll = new Image();
+    this.troll.onload = () => {
+      this.drawTroll();
+    }
+    this.troll.src = './dis/assets/images/trolls/troll_01_jump.png';
     this.drawTroll(); //this will draw it as soon as there is an instance of it
   }
 

@@ -34,7 +34,7 @@ class Game {
   animate() {
     this.elf.animate();
     this.drawMonolith();
-    window.requestAnimationFrame(animate());
+    window.requestAnimationFrame(this.animate.bind(this));
   };
 
 
@@ -64,10 +64,6 @@ class Game {
   }
 
   stopChargingEnergyBlast() {
-
-  }
-
-  startGame() {
 
   }
 

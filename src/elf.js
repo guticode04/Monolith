@@ -24,13 +24,16 @@ class Elf {
     //destination position
     ELF_POS_X, ELF_POS_Y, ELF_WIDTH, ELF_HEIGHT);
   } 
+
   animate() {
     this.ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
     let currentFrameIdx = 0;
     let frameCycle = [0, 2000, 4000, 6000, 8000, 10000, 12000];
     this.drawElfFrame(frameCycle[currentFrameIdx]);
     currentFrameIdx++;
-    if(currentFrameIdx > frameCycle.length) currentFrameIdx = 0;
+    if(currentFrameIdx >= frameCycle.length) { 
+      currentFrameIdx = 0;
+    }
   }
 
   
