@@ -24,6 +24,12 @@ class Troll {
     //so your frame is always going to be on the first frame of the 
     //sprite sheet
     let currentFrameIdx = 0;
+    let frameCycle = [0, 1600, 3200, 4800, 6400, 8000, 9600];
+    this.drawTrollFrame(frameCycle[currentFrameIdx]);
+    currentFrameIdx++;
+    if(currentFrameIdx >= frameCycle.length) {
+      currentFrameIdx = 0;
+    }
   }
   drawTrollFrame(frameIdx) {
     console.log("inside draw troll");
