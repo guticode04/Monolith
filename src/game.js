@@ -13,7 +13,7 @@ class Game {
     this.ctx = ctx;
     // this.blast = new Blast(ctx);
     this.elf = new Elf(ctx);
-    // this.troll = new Troll(ctx);
+    this.troll = new Troll(ctx);
     this.monolith = new Image();
     this.monolith.onload = () => { this.drawMonolith() };
     this.monolith.src = './dist/assets/images/monolith/monolith.png';
@@ -33,6 +33,7 @@ class Game {
 
   animate() {
     this.elf.animate();
+    // this.troll.animate();
     this.drawMonolith();
     window.requestAnimationFrame(this.animate.bind(this));
   };

@@ -11,18 +11,18 @@ class Troll {
     this.ctx = ctx;
     this.troll = new Image();
     this.troll.onload = () => {
-      //this will draw it as soon as there is an instance of it
       this.drawTrollFrame();
     }
-    this.troll.src = './dis/assets/images/trolls/troll_01_jump.png';
+    this.troll.src = "./dis/assets/images/trolls/troll_01_jump.png";
   }
+
+  //this could be a problem because in the game file you are calling
+  //animate over and over so each time you are defining these variables
+  //so your frame is always going to be on the first frame of the 
+  //sprite sheet
 
   animate() {
     this.ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
-    //this could be a problem because in the game file you are calling
-    //animate over and over so each time you are defining these variables
-    //so your frame is always going to be on the first frame of the 
-    //sprite sheet
     let currentFrameIdx = 0;
     let frameCycle = [0, 1600, 3200, 4800, 6400, 8000, 9600];
     this.drawTrollFrame(frameCycle[currentFrameIdx]);
@@ -31,18 +31,19 @@ class Troll {
       currentFrameIdx = 0;
     }
   }
+
+  //sheetW = 9600;
+  //sheetH = 1000;
+  //each frame is 1600 * 1000
+  
   drawTrollFrame(frameIdx) {
     console.log("inside draw troll");
-    //sheetW = 9600;
-    //sheetH = 1000;
-    //each frame is 1600 * 1000
     const frameW = this.troll.width / 6;
     const frameH = this.troll.height;
     
     // this.drawTroll();
     this.ctx.drawImage(this.troll,
       //source position
-      // frameW * frameStep, 0, frameW, frameH,
       frameIdx, 0, frameW, frameH,
       //destination position
       0, 100, TROLL_WIDTH, TROLL_HEIGHT);
