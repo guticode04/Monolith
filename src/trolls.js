@@ -35,21 +35,18 @@ class Troll {
   //sheetW = 9600;
   //sheetH = 1000;
   //each frame is 1600 * 1000
-  
+
   drawTrollFrame(frameIdx) {
     console.log("inside draw troll");
     const frameW = this.troll.width / 6;
     const frameH = this.troll.height;
     
-    // this.drawTroll();
     this.ctx.drawImage(this.troll,
       //source position
       frameIdx, 0, frameW, frameH,
       //destination position
       0, 100, TROLL_WIDTH, TROLL_HEIGHT);
   }
-
-    //first troll image
 
     //second troll image
     // this.game.ctx.drawImage(this.troll,

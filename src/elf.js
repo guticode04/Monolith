@@ -19,7 +19,6 @@ class Elf {
   drawElfFrame(frameIdx) {
     this.ctx.drawImage(this.elf,
     //source position
-    // 0, 0, this.elf.width/6, this.elf.height,
     frameIdx, 0, this.elf.width/6, this.elf.height,
     //destination position
     ELF_POS_X, ELF_POS_Y, ELF_WIDTH, ELF_HEIGHT);
@@ -27,15 +26,26 @@ class Elf {
 
   animate() {
     this.ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
+    // let currentFrameIdx = 0;
+    // let frameCycle = [0, 2000, 4000, 6000, 8000, 10000, 12000];
+    this.drawElfFrame(frameCycle[currentFrameIdx]);
+    // currentFrameIdx++;
+    // if(currentFrameIdx >= frameCycle.length) { 
+    //   currentFrameIdx = 0;
+    // }
+  }
+  
+  //this won't work its basically the same thing
+  step() {
     let currentFrameIdx = 0;
     let frameCycle = [0, 2000, 4000, 6000, 8000, 10000, 12000];
-    this.drawElfFrame(frameCycle[currentFrameIdx]);
     currentFrameIdx++;
-    if(currentFrameIdx >= frameCycle.length) { 
+    if(currentFrameIdx >= frameCycle.length) {
       currentFrameIdx = 0;
     }
+    frameStep = frameCycle[currentFrameIdx];
+    return frameStep;
   }
-
   
 
 };
